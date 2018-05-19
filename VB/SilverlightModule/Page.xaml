@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="SilverlightModule.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="298" d:DesignWidth="412" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/datagrid">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>        
+        <dxg:AgDataGrid x:Name="GridCustomers" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" AutoGenerateColumns="False" FocusedRowChanged="GridCustomers_FocusedRowChanged">
+            <dxg:AgDataGrid.Columns>
+                <dxg:AgDataGridColumn FieldName="ContactName" Width="200" HeaderToolTip="DateColumn" />
+            </dxg:AgDataGrid.Columns>
+        </dxg:AgDataGrid>
+        <dxg:AgDataGrid x:Name="GridOrders" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" AutoGenerateColumns="False">
+            <dxg:AgDataGrid.Columns>
+                <dxg:AgDataGridColumn FieldName="OrderDate" Width="100" HeaderToolTip="DateColumn" />
+                <dxg:AgDataGridColumn FieldName="RequiredDate" Width="100" HeaderToolTip="DateColumn" />
+                <dxg:AgDataGridColumn FieldName="ShippedDate" Width="100" HeaderToolTip="DateColumn" />
+                <dxg:AgDataGridColumn FieldName="Freight" Width="100" HeaderToolTip="NumberColumn" />
+                <dxg:AgDataGridColumn FieldName="ShipName" Width="200" HeaderToolTip="TextColumn" />
+                <dxg:AgDataGridColumn FieldName="ShipCity" Width="100" HeaderToolTip="TextColumn" />
+                <dxg:AgDataGridColumn FieldName="ShipCountry" Width="100" HeaderToolTip="TextColumn" /> 
+            </dxg:AgDataGrid.Columns>
+        </dxg:AgDataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2">
+            <Button x:Name="BtnReload" Click="BtnReload_Click" Content="Reload" />
+            <Button x:Name="BtnEdit" Click="BtnEdit_Click" Content="Edit" />
+            <Button x:Name="BtnNew" Click="BtnNew_Click" Content="Add New" Visibility="Collapsed" />
+            <Button x:Name="BtnDelete" Click="BtnDelete_Click" Content="Delete" />
+            <Button x:Name="BtnSave" Click="BtnSave_Click" Content="Commit Changes" />
+        </StackPanel>
+        <Image x:Name="ImgLoading" Grid.Column="1" Grid.Row="1" Visibility="Collapsed" Width="108" Height="62" Source="/SilverlightModule;component/Loading.jpg" />
+    </Grid>
+</UserControl>

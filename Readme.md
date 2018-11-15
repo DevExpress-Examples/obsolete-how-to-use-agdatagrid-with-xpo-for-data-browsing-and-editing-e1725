@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [NorthwindXpo.cs](./CS/SilverlightModule/NorthwindXpo.cs) (VB: [NorthwindXpo.vb](./VB/SilverlightModule/NorthwindXpo.vb))
+* [Page.xaml](./CS/SilverlightModule/Page.xaml) (VB: [Page.xaml](./VB/SilverlightModule/Page.xaml))
+* [Page.xaml.cs](./CS/SilverlightModule/Page.xaml.cs) (VB: [Page.xaml](./VB/SilverlightModule/Page.xaml))
+* [XpoGateSoapClient.cs](./CS/SilverlightModule/XpoGateSoapClient.cs) (VB: [XpoGateSoapClient.vb](./VB/SilverlightModule/XpoGateSoapClient.vb))
+* [XpoGate.asmx.cs](./CS/WebApplication/XpoGate.asmx.cs) (VB: [XpoGate.asmx.vb](./VB/WebApplication/XpoGate.asmx.vb))
+<!-- default file list end -->
 # OBSOLETE - How to use AgDataGrid with XPO for data browsing and editing
 
 

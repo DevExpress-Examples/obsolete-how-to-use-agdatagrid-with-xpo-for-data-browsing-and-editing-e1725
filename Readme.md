@@ -8,6 +8,9 @@
 * [XpoGate.asmx.cs](./CS/WebApplication/XpoGate.asmx.cs) (VB: [XpoGate.asmx.vb](./VB/WebApplication/XpoGate.asmx.vb))
 <!-- default file list end -->
 # OBSOLETE - How to use AgDataGrid with XPO for data browsing and editing
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e1725)**
+<!-- run online end -->
 
 
 <p>This example is obsolete. Refer to <a href="https://www.devexpress.com/Support/Center/p/E3883">An example of a simple CRUD XPO SL application</a><u>.</u><br />
